@@ -2,10 +2,10 @@
         include "mc6809.inc"
 
 ;;; MC6850 Asynchronous Communication Interface Adapter
-ACIA:   equ     $FFC0
+ACIA:   equ     $DF00
         include "mc6850.inc"
 
-        org     $F000
+        org     $1000
 stack:  equ     *
 
         org     $1000
